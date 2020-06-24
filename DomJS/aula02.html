@@ -1,0 +1,30 @@
+
+<!-- Trabalhando com a DOm -->
+
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando a dom</title>
+</head>
+<body>
+    <div id="app">
+       <input type="text" name="nome" id="nome">
+       <button class="botao"> Adicionar</button>
+    </div>
+
+    <script>
+        
+        var inpputElement = document.querySelector('input#nome');
+        var btnElement = document.querySelector('button.botao');
+
+        btnElement.onclick =function(){
+            var text = inpputElement.value;
+
+            alert(text);
+        }
+
+    </script>
+</body>
+</html>
